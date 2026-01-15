@@ -1,674 +1,197 @@
 {
     "instruments": [
         {
-            "id": "violin",
-            "name": "Violin",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "E7"
-            },
-            "written_range": {
-                "lowest": "G3",
-                "highest": "E7"
-            },
-            "preferred_range": {
-                "lowest": "D4",
-                "highest": "A6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 40
-        },
-        {
-            "id": "violino_piccolo",
-            "name": "Violino Piccolo",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "G7"
-            },
-            "written_range": {
-                "lowest": "G3",
-                "highest": "G7"
-            },
-            "preferred_range": {
-                "lowest": "D4",
-                "highest": "C7"
-            },
-            "octave_displacement": 0,
-            "midi_program": 40
-        },
-        {
-            "id": "viola",
-            "name": "Viola",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C3",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "C3",
-                "highest": "A6"
-            },
-            "preferred_range": {
-                "lowest": "C3",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 41
-        },
-        {
-            "id": "vertical_viola",
-            "name": "Vertical Viola",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C3",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "C3",
-                "highest": "A6"
-            },
-            "preferred_range": {
-                "lowest": "C3",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 41
-        },
-        {
-            "id": "viola_pomposa",
-            "name": "Viola Pomposa",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C3",
-                "highest": "E6"
-            },
-            "written_range": {
-                "lowest": "C3",
-                "highest": "E6"
-            },
-            "preferred_range": {
-                "lowest": "C3",
-                "highest": "C6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 41
-        },
-        {
-            "id": "violotta",
-            "name": "Violotta",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "D6"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "D6"
-            },
-            "preferred_range": {
-                "lowest": "A2",
-                "highest": "A5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 41
-        },
-        {
-            "id": "viola_profunda",
-            "name": "Viola Profunda",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor"
-            ],
-            "sounding_range": {
-                "lowest": "C2",
-                "highest": "G5"
-            },
-            "written_range": {
-                "lowest": "C2",
-                "highest": "G5"
-            },
-            "preferred_range": {
-                "lowest": "C2",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "cello",
-            "name": "Cello",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C2",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "C2",
-                "highest": "A5"
-            },
-            "preferred_range": {
-                "lowest": "C2",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "bass_violin",
-            "name": "Bass Violin",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "C2",
-                "highest": "G4"
-            },
-            "written_range": {
-                "lowest": "C2",
-                "highest": "G4"
-            },
-            "preferred_range": {
-                "lowest": "C2",
-                "highest": "E4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "baritone_violin",
-            "name": "Baritone Violin",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "G1",
-                "highest": "D5"
-            },
-            "written_range": {
-                "lowest": "G1",
-                "highest": "D5"
-            },
-            "preferred_range": {
-                "lowest": "G1",
-                "highest": "A4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "violoncello_da_spalla",
-            "name": "Violoncello da Spalla",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor"
-            ],
-            "sounding_range": {
-                "lowest": "C2",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "C2",
-                "highest": "A5"
-            },
-            "preferred_range": {
-                "lowest": "C2",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "cellone",
-            "name": "Cellone",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A1",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "A1",
-                "highest": "E5"
-            },
-            "preferred_range": {
-                "lowest": "A1",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 43
-        },
-        {
-            "id": "double_bass",
-            "name": "Double Bass",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "E1",
-                "highest": "G4"
-            },
-            "written_range": {
-                "lowest": "E2",
-                "highest": "G5"
-            },
-            "preferred_range": {
-                "lowest": "E1",
-                "highest": "E4"
-            },
-            "octave_displacement": -12,
-            "midi_program": 43
-        },
-        {
-            "id": "d_violone",
-            "name": "D Violone",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "D1",
-                "highest": "A4"
-            },
-            "written_range": {
-                "lowest": "D2",
-                "highest": "A5"
-            },
-            "preferred_range": {
-                "lowest": "D1",
-                "highest": "D4"
-            },
-            "octave_displacement": -12,
-            "midi_program": 43
-        },
-        {
-            "id": "octobass",
-            "name": "Octobass",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "C0",
-                "highest": "C3"
-            },
-            "written_range": {
-                "lowest": "C1",
-                "highest": "C4"
-            },
-            "preferred_range": {
-                "lowest": "C0",
-                "highest": "C2"
-            },
-            "octave_displacement": -12,
-            "midi_program": 43
-        },
-        {
-            "id": "harp",
-            "name": "Pedal Harp",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "C1",
-                "highest": "G7"
-            },
-            "written_range": {
-                "lowest": "C1",
-                "highest": "G7"
-            },
-            "preferred_range": {
-                "lowest": "C1",
-                "highest": "G7"
-            },
-            "octave_displacement": 0,
-            "midi_program": 46
-        },
-        {
-            "id": "cimbalom",
-            "name": "Cimbalom",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "E2",
-                "highest": "A6"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "A6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 15
-        },
-        {
-            "id": "lute",
-            "name": "Lute",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "A6"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "E5"
-            },
-            "octave_displacement": -12,
-            "midi_program": 24
-        },
-        {
-            "id": "theorbo",
-            "name": "Theorbo",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A1",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "E6"
-            },
-            "preferred_range": {
-                "lowest": "A1",
-                "highest": "A4"
-            },
-            "octave_displacement": -12,
-            "midi_program": 24
-        },
-        {
-            "id": "viol",
-            "name": "Viol",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D2",
-                "highest": "D6"
-            },
-            "written_range": {
-                "lowest": "D2",
-                "highest": "D6"
-            },
-            "preferred_range": {
-                "lowest": "D2",
-                "highest": "A5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "guitar",
-            "name": "Guitar (Classical)",
-            "family": "Strings",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "B5"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "B6"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "E5"
-            },
-            "octave_displacement": -12,
-            "midi_program": 24
-        },
-        {
-            "id": "baryton",
-            "name": "Baryton",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A1",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "A1",
-                "highest": "E5"
-            },
-            "preferred_range": {
-                "lowest": "A1",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "arpeggione",
-            "name": "Arpeggione",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "C6"
-            },
-            "written_range": {
-                "lowest": "E2",
-                "highest": "C6"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "E5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 42
-        },
-        {
-            "id": "viola_damore",
-            "name": "Viola d'amore",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "E6"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "E6"
-            },
-            "preferred_range": {
-                "lowest": "A2",
-                "highest": "C6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 41
-        },
-        {
-            "id": "mandolin",
-            "name": "Mandolin",
-            "family": "Strings",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "E6"
-            },
-            "written_range": {
-                "lowest": "G3",
-                "highest": "E6"
-            },
-            "preferred_range": {
-                "lowest": "G3",
-                "highest": "C6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 105
-        },
-        {
-            "id": "horn_f",
-            "name": "Horn in F",
+            "id": "alto_horn_eb",
+            "name": "Alto Horn in E♭",
             "family": "Brass",
             "transposition": {
                 "type": "interval",
-                "semitones": -7
+                "semitones": -9
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "G3",
+                "highest": "D6"
+            },
+            "preferred_range": {
+                "lowest": "G3",
+                "highest": "A5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 60
+        },
+        {
+            "id": "trombone_alto",
+            "name": "Alto Trombone",
+            "family": "Brass",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "B5"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "B5"
+            },
+            "preferred_range": {
+                "lowest": "A2",
+                "highest": "F5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 57
+        },
+        {
+            "id": "baritone_horn",
+            "name": "Baritone Horn",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "B4"
+            },
+            "written_range": {
+                "lowest": "F#2",
+                "highest": "C#5"
+            },
+            "preferred_range": {
+                "lowest": "F#2",
+                "highest": "G4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 58
+        },
+        {
+            "id": "trombone_bass",
+            "name": "Bass Trombone",
+            "family": "Brass",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "C2",
+                "highest": "D5"
+            },
+            "written_range": {
+                "lowest": "C2",
+                "highest": "D5"
+            },
+            "preferred_range": {
+                "lowest": "C2",
+                "highest": "A4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 57
+        },
+        {
+            "id": "cornet_bb",
+            "name": "Cornet in B♭",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E3",
+                "highest": "B5"
+            },
+            "written_range": {
+                "lowest": "F#3",
+                "highest": "C#6"
+            },
+            "preferred_range": {
+                "lowest": "F#3",
+                "highest": "G5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 56
+        },
+        {
+            "id": "euphonium",
+            "name": "Euphonium",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "bass",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "C5"
+            },
+            "written_range": {
+                "lowest": "F#2",
+                "highest": "D5"
+            },
+            "preferred_range": {
+                "lowest": "F#2",
+                "highest": "A4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 58
+        },
+        {
+            "id": "flugelhorn_bb",
+            "name": "Flugelhorn in B♭",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E3",
+                "highest": "B5"
+            },
+            "written_range": {
+                "lowest": "F#3",
+                "highest": "C#6"
+            },
+            "preferred_range": {
+                "lowest": "F#3",
+                "highest": "G5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 56
+        },
+        {
+            "id": "horn_bb",
+            "name": "Horn in B♭",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
             },
             "clefs": [
                 "treble",
@@ -679,12 +202,12 @@
                 "highest": "F5"
             },
             "written_range": {
-                "lowest": "F2",
-                "highest": "C6"
+                "lowest": "C#2",
+                "highest": "G5"
             },
             "preferred_range": {
-                "lowest": "C3",
-                "highest": "G5"
+                "lowest": "D3",
+                "highest": "A5"
             },
             "octave_displacement": 0,
             "midi_program": 60
@@ -714,6 +237,138 @@
             },
             "octave_displacement": 0,
             "midi_program": 60
+        },
+        {
+            "id": "horn_f",
+            "name": "Horn in F",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -7
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "B1",
+                "highest": "F5"
+            },
+            "written_range": {
+                "lowest": "F2",
+                "highest": "C6"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "G5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 60
+        },
+        {
+            "id": "piccolo_trumpet_bb",
+            "name": "Piccolo Trumpet in B♭",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": 10
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D4",
+                "highest": "C7"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "D6"
+            },
+            "preferred_range": {
+                "lowest": "F#4",
+                "highest": "A6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 56
+        },
+        {
+            "id": "sousaphone",
+            "name": "Sousaphone",
+            "family": "Brass",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "D1",
+                "highest": "F4"
+            },
+            "written_range": {
+                "lowest": "D1",
+                "highest": "F4"
+            },
+            "preferred_range": {
+                "lowest": "D1",
+                "highest": "C4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 58
+        },
+        {
+            "id": "tenor_horn_bb",
+            "name": "Tenor Horn in B♭",
+            "family": "Brass",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "B4"
+            },
+            "written_range": {
+                "lowest": "F#2",
+                "highest": "C#5"
+            },
+            "preferred_range": {
+                "lowest": "F#2",
+                "highest": "G4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 60
+        },
+        {
+            "id": "trombone_tenor",
+            "name": "Tenor Trombone",
+            "family": "Brass",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "F5"
+            },
+            "written_range": {
+                "lowest": "E2",
+                "highest": "F5"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 57
         },
         {
             "id": "trumpet_bb",
@@ -794,298 +449,8 @@
             "midi_program": 56
         },
         {
-            "id": "piccolo_trumpet_bb",
-            "name": "Piccolo Trumpet in B♭",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": 10
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D4",
-                "highest": "C7"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "D6"
-            },
-            "preferred_range": {
-                "lowest": "F#4",
-                "highest": "A6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 56
-        },
-        {
-            "id": "trombone_tenor",
-            "name": "Tenor Trombone",
-            "family": "Brass",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "F5"
-            },
-            "written_range": {
-                "lowest": "E2",
-                "highest": "F5"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 57
-        },
-        {
-            "id": "trombone_bass",
-            "name": "Bass Trombone",
-            "family": "Brass",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "C2",
-                "highest": "D5"
-            },
-            "written_range": {
-                "lowest": "C2",
-                "highest": "D5"
-            },
-            "preferred_range": {
-                "lowest": "C2",
-                "highest": "A4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 57
-        },
-        {
-            "id": "trombone_alto",
-            "name": "Alto Trombone",
-            "family": "Brass",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "alto",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "B5"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "B5"
-            },
-            "preferred_range": {
-                "lowest": "A2",
-                "highest": "F5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 57
-        },
-        {
-            "id": "flugelhorn_bb",
-            "name": "Flugelhorn in B♭",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E3",
-                "highest": "B5"
-            },
-            "written_range": {
-                "lowest": "F#3",
-                "highest": "C#6"
-            },
-            "preferred_range": {
-                "lowest": "F#3",
-                "highest": "G5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 56
-        },
-        {
-            "id": "alto_horn_eb",
-            "name": "Alto Horn in E♭",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -9
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "G3",
-                "highest": "D6"
-            },
-            "preferred_range": {
-                "lowest": "G3",
-                "highest": "A5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 60
-        },
-        {
-            "id": "tenor_horn_bb",
-            "name": "Tenor Horn in B♭",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "B4"
-            },
-            "written_range": {
-                "lowest": "F#2",
-                "highest": "C#5"
-            },
-            "preferred_range": {
-                "lowest": "F#2",
-                "highest": "G4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 60
-        },
-        {
-            "id": "baritone_horn",
-            "name": "Baritone Horn",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "B4"
-            },
-            "written_range": {
-                "lowest": "F#2",
-                "highest": "C#5"
-            },
-            "preferred_range": {
-                "lowest": "F#2",
-                "highest": "G4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 58
-        },
-        {
-            "id": "euphonium",
-            "name": "Euphonium",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "bass",
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "C5"
-            },
-            "written_range": {
-                "lowest": "F#2",
-                "highest": "D5"
-            },
-            "preferred_range": {
-                "lowest": "F#2",
-                "highest": "A4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 58
-        },
-        {
             "id": "tuba",
             "name": "Tuba",
-            "family": "Brass",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "D1",
-                "highest": "F4"
-            },
-            "written_range": {
-                "lowest": "D1",
-                "highest": "F4"
-            },
-            "preferred_range": {
-                "lowest": "D1",
-                "highest": "C4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 58
-        },
-        {
-            "id": "cornet_bb",
-            "name": "Cornet in B♭",
-            "family": "Brass",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E3",
-                "highest": "B5"
-            },
-            "written_range": {
-                "lowest": "F#3",
-                "highest": "C#6"
-            },
-            "preferred_range": {
-                "lowest": "F#3",
-                "highest": "G5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 56
-        },
-        {
-            "id": "sousaphone",
-            "name": "Sousaphone",
             "family": "Brass",
             "transposition": {
                 "type": "none",
@@ -1136,689 +501,31 @@
             "midi_program": 60
         },
         {
-            "id": "piccolo",
-            "name": "Piccolo",
-            "family": "Woodwinds",
+            "id": "celesta",
+            "name": "Celesta",
+            "family": "Keyboard",
             "transposition": {
                 "type": "octave",
                 "semitones": 12
             },
             "clefs": [
-                "treble"
+                "treble",
+                "bass"
             ],
             "sounding_range": {
-                "lowest": "D5",
+                "lowest": "C4",
                 "highest": "C8"
             },
             "written_range": {
-                "lowest": "D4",
+                "lowest": "C3",
                 "highest": "C7"
             },
             "preferred_range": {
-                "lowest": "D5",
-                "highest": "A7"
+                "lowest": "C4",
+                "highest": "C8"
             },
             "octave_displacement": 12,
-            "midi_program": 72
-        },
-        {
-            "id": "flute",
-            "name": "Flute",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C4",
-                "highest": "D7"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "D7"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "A6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 73
-        },
-        {
-            "id": "alto_flute",
-            "name": "Alto Flute in G",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -5
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "G6"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "G3",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 73
-        },
-        {
-            "id": "bass_flute",
-            "name": "Bass Flute",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C3",
-                "highest": "C6"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "C3",
-                "highest": "A5"
-            },
-            "octave_displacement": -12,
-            "midi_program": 73
-        },
-        {
-            "id": "oboe",
-            "name": "Oboe",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "B3",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "B3",
-                "highest": "A6"
-            },
-            "preferred_range": {
-                "lowest": "B3",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 68
-        },
-        {
-            "id": "oboe_damore",
-            "name": "Oboe d'amore",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -3
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A3",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "A3",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 68
-        },
-        {
-            "id": "english_horn",
-            "name": "English Horn",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -7
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "E3",
-                "highest": "C6"
-            },
-            "written_range": {
-                "lowest": "B3",
-                "highest": "G6"
-            },
-            "preferred_range": {
-                "lowest": "E3",
-                "highest": "A5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 69
-        },
-        {
-            "id": "heckelphone",
-            "name": "Heckelphone",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "A5"
-            },
-            "preferred_range": {
-                "lowest": "A2",
-                "highest": "E5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 68
-        },
-        {
-            "id": "clarinet_bb",
-            "name": "Clarinet in B♭",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D3",
-                "highest": "B6"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "E3",
-                "highest": "F6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 71
-        },
-        {
-            "id": "clarinet_a",
-            "name": "Clarinet in A",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -3
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C#3",
-                "highest": "A6"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "E3",
-                "highest": "F6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 71
-        },
-        {
-            "id": "clarinet_eb",
-            "name": "E♭ Clarinet",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": 3
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "E7"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "G3",
-                "highest": "A6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 71
-        },
-        {
-            "id": "bass_clarinet",
-            "name": "Bass Clarinet in B♭",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -14
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D2",
-                "highest": "B5"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "D2",
-                "highest": "F5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 71
-        },
-        {
-            "id": "contrabass_clarinet",
-            "name": "Contrabass Clarinet",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -26
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D1",
-                "highest": "B4"
-            },
-            "written_range": {
-                "lowest": "E3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "D1",
-                "highest": "F4"
-            },
-            "octave_displacement": 0,
-            "midi_program": 71
-        },
-        {
-            "id": "bassoon",
-            "name": "Bassoon",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass",
-                "tenor"
-            ],
-            "sounding_range": {
-                "lowest": "B1",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "B1",
-                "highest": "E5"
-            },
-            "preferred_range": {
-                "lowest": "B1",
-                "highest": "C5"
-            },
-            "octave_displacement": 0,
-            "midi_program": 70
-        },
-        {
-            "id": "contrabassoon",
-            "name": "Contrabassoon",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "B0",
-                "highest": "E4"
-            },
-            "written_range": {
-                "lowest": "B1",
-                "highest": "E5"
-            },
-            "preferred_range": {
-                "lowest": "B0",
-                "highest": "C4"
-            },
-            "octave_displacement": -12,
-            "midi_program": 70
-        },
-        {
-            "id": "saxophone_soprano",
-            "name": "Soprano Saxophone",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -2
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A3",
-                "highest": "E6"
-            },
-            "written_range": {
-                "lowest": "B3",
-                "highest": "F#6"
-            },
-            "preferred_range": {
-                "lowest": "B3",
-                "highest": "C6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 64
-        },
-        {
-            "id": "saxophone_alto",
-            "name": "Alto Saxophone",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -9
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D3",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "G6"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 65
-        },
-        {
-            "id": "saxophone_tenor",
-            "name": "Tenor Saxophone",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -14
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "E5"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "G6"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 66
-        },
-        {
-            "id": "saxophone_baritone",
-            "name": "Baritone Saxophone",
-            "family": "Woodwinds",
-            "transposition": {
-                "type": "interval",
-                "semitones": -21
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "D2",
-                "highest": "A4"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "G6"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "E6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 67
-        },
-        {
-            "id": "soprano",
-            "name": "Soprano",
-            "family": "Vocal",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C4",
-                "highest": "C6"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "C6"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "A5"
-            },
-            "octave_displacement": 0,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "mezzo_soprano",
-            "name": "Mezzo-Soprano",
-            "family": "Vocal",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "A3",
-                "highest": "A5"
-            },
-            "written_range": {
-                "lowest": "A3",
-                "highest": "A5"
-            },
-            "preferred_range": {
-                "lowest": "A3",
-                "highest": "F5"
-            },
-            "octave_displacement": 0,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "alto",
-            "name": "Alto",
-            "family": "Vocal",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "G3",
-                "highest": "G5"
-            },
-            "written_range": {
-                "lowest": "G3",
-                "highest": "G5"
-            },
-            "preferred_range": {
-                "lowest": "G3",
-                "highest": "D5"
-            },
-            "octave_displacement": 0,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "tenor",
-            "name": "Tenor",
-            "family": "Vocal",
-            "transposition": {
-                "type": "octave",
-                "semitones": -12
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "C3",
-                "highest": "C5"
-            },
-            "written_range": {
-                "lowest": "C4",
-                "highest": "C6"
-            },
-            "preferred_range": {
-                "lowest": "C3",
-                "highest": "A4"
-            },
-            "octave_displacement": -12,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "baritone",
-            "name": "Baritone",
-            "family": "Vocal",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A2",
-                "highest": "A4"
-            },
-            "written_range": {
-                "lowest": "A2",
-                "highest": "A4"
-            },
-            "preferred_range": {
-                "lowest": "A2",
-                "highest": "F4"
-            },
-            "octave_displacement": 0,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "bass",
-            "name": "Bass",
-            "family": "Vocal",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "E2",
-                "highest": "E4"
-            },
-            "written_range": {
-                "lowest": "E2",
-                "highest": "E4"
-            },
-            "preferred_range": {
-                "lowest": "E2",
-                "highest": "C4"
-            },
-            "octave_displacement": 0,
-            "lyrics_support": true,
-            "midi_program": 52
-        },
-        {
-            "id": "piano",
-            "name": "Piano",
-            "family": "Keyboard",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "A0",
-                "highest": "C8"
-            },
-            "written_range": {
-                "lowest": "A0",
-                "highest": "C8"
-            },
-            "preferred_range": {
-                "lowest": "A0",
-                "highest": "C8"
-            },
-            "octave_displacement": 0,
-            "midi_program": 0
+            "midi_program": 8
         },
         {
             "id": "harpsichord",
@@ -1848,33 +555,6 @@
             "midi_program": 6
         },
         {
-            "id": "celesta",
-            "name": "Celesta",
-            "family": "Keyboard",
-            "transposition": {
-                "type": "octave",
-                "semitones": 12
-            },
-            "clefs": [
-                "treble",
-                "bass"
-            ],
-            "sounding_range": {
-                "lowest": "C4",
-                "highest": "C8"
-            },
-            "written_range": {
-                "lowest": "C3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "C4",
-                "highest": "C8"
-            },
-            "octave_displacement": 12,
-            "midi_program": 8
-        },
-        {
             "id": "organ",
             "name": "Organ",
             "family": "Keyboard",
@@ -1902,6 +582,33 @@
             "midi_program": 19
         },
         {
+            "id": "piano",
+            "name": "Piano",
+            "family": "Keyboard",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A0",
+                "highest": "C8"
+            },
+            "written_range": {
+                "lowest": "A0",
+                "highest": "C8"
+            },
+            "preferred_range": {
+                "lowest": "A0",
+                "highest": "C8"
+            },
+            "octave_displacement": 0,
+            "midi_program": 0
+        },
+        {
             "id": "glockenspiel",
             "name": "Glockenspiel",
             "family": "Percussion",
@@ -1926,58 +633,6 @@
             },
             "octave_displacement": 24,
             "midi_program": 9
-        },
-        {
-            "id": "xylophone",
-            "name": "Xylophone",
-            "family": "Percussion",
-            "transposition": {
-                "type": "octave",
-                "semitones": 12
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "F4",
-                "highest": "C8"
-            },
-            "written_range": {
-                "lowest": "F3",
-                "highest": "C7"
-            },
-            "preferred_range": {
-                "lowest": "F4",
-                "highest": "C8"
-            },
-            "octave_displacement": 12,
-            "midi_program": 13
-        },
-        {
-            "id": "vibraphone",
-            "name": "Vibraphone",
-            "family": "Percussion",
-            "transposition": {
-                "type": "none",
-                "semitones": 0
-            },
-            "clefs": [
-                "treble"
-            ],
-            "sounding_range": {
-                "lowest": "F3",
-                "highest": "F6"
-            },
-            "written_range": {
-                "lowest": "F3",
-                "highest": "F6"
-            },
-            "preferred_range": {
-                "lowest": "F3",
-                "highest": "F6"
-            },
-            "octave_displacement": 0,
-            "midi_program": 11
         },
         {
             "id": "marimba",
@@ -2057,6 +712,1378 @@
             },
             "octave_displacement": 0,
             "midi_program": 14
+        },
+        {
+            "id": "vibraphone",
+            "name": "Vibraphone",
+            "family": "Percussion",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "F3",
+                "highest": "F6"
+            },
+            "written_range": {
+                "lowest": "F3",
+                "highest": "F6"
+            },
+            "preferred_range": {
+                "lowest": "F3",
+                "highest": "F6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 11
+        },
+        {
+            "id": "xylophone",
+            "name": "Xylophone",
+            "family": "Percussion",
+            "transposition": {
+                "type": "octave",
+                "semitones": 12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "F4",
+                "highest": "C8"
+            },
+            "written_range": {
+                "lowest": "F3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "F4",
+                "highest": "C8"
+            },
+            "octave_displacement": 12,
+            "midi_program": 13
+        },
+        {
+            "id": "arpeggione",
+            "name": "Arpeggione",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "C6"
+            },
+            "written_range": {
+                "lowest": "E2",
+                "highest": "C6"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "E5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "baritone_violin",
+            "name": "Baritone Violin",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "G1",
+                "highest": "D5"
+            },
+            "written_range": {
+                "lowest": "G1",
+                "highest": "D5"
+            },
+            "preferred_range": {
+                "lowest": "G1",
+                "highest": "A4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "baryton",
+            "name": "Baryton",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A1",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "A1",
+                "highest": "E5"
+            },
+            "preferred_range": {
+                "lowest": "A1",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "bass_violin",
+            "name": "Bass Violin",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "C2",
+                "highest": "G4"
+            },
+            "written_range": {
+                "lowest": "C2",
+                "highest": "G4"
+            },
+            "preferred_range": {
+                "lowest": "C2",
+                "highest": "E4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "cello",
+            "name": "Cello",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C2",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "C2",
+                "highest": "A5"
+            },
+            "preferred_range": {
+                "lowest": "C2",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "cellone",
+            "name": "Cellone",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A1",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "A1",
+                "highest": "E5"
+            },
+            "preferred_range": {
+                "lowest": "A1",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 43
+        },
+        {
+            "id": "cimbalom",
+            "name": "Cimbalom",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "E2",
+                "highest": "A6"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "A6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 15
+        },
+        {
+            "id": "d_violone",
+            "name": "D Violone",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "D1",
+                "highest": "A4"
+            },
+            "written_range": {
+                "lowest": "D2",
+                "highest": "A5"
+            },
+            "preferred_range": {
+                "lowest": "D1",
+                "highest": "D4"
+            },
+            "octave_displacement": -12,
+            "midi_program": 43
+        },
+        {
+            "id": "double_bass",
+            "name": "Double Bass",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "E1",
+                "highest": "G4"
+            },
+            "written_range": {
+                "lowest": "E2",
+                "highest": "G5"
+            },
+            "preferred_range": {
+                "lowest": "E1",
+                "highest": "E4"
+            },
+            "octave_displacement": -12,
+            "midi_program": 43
+        },
+        {
+            "id": "guitar",
+            "name": "Guitar (Classical)",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "B5"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "B6"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "E5"
+            },
+            "octave_displacement": -12,
+            "midi_program": 24
+        },
+        {
+            "id": "lute",
+            "name": "Lute",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "A6"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "E5"
+            },
+            "octave_displacement": -12,
+            "midi_program": 24
+        },
+        {
+            "id": "mandolin",
+            "name": "Mandolin",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "E6"
+            },
+            "written_range": {
+                "lowest": "G3",
+                "highest": "E6"
+            },
+            "preferred_range": {
+                "lowest": "G3",
+                "highest": "C6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 105
+        },
+        {
+            "id": "octobass",
+            "name": "Octobass",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "C0",
+                "highest": "C3"
+            },
+            "written_range": {
+                "lowest": "C1",
+                "highest": "C4"
+            },
+            "preferred_range": {
+                "lowest": "C0",
+                "highest": "C2"
+            },
+            "octave_displacement": -12,
+            "midi_program": 43
+        },
+        {
+            "id": "harp",
+            "name": "Pedal Harp",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "C1",
+                "highest": "G7"
+            },
+            "written_range": {
+                "lowest": "C1",
+                "highest": "G7"
+            },
+            "preferred_range": {
+                "lowest": "C1",
+                "highest": "G7"
+            },
+            "octave_displacement": 0,
+            "midi_program": 46
+        },
+        {
+            "id": "theorbo",
+            "name": "Theorbo",
+            "family": "Strings",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A1",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "E6"
+            },
+            "preferred_range": {
+                "lowest": "A1",
+                "highest": "A4"
+            },
+            "octave_displacement": -12,
+            "midi_program": 24
+        },
+        {
+            "id": "vertical_viola",
+            "name": "Vertical Viola",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C3",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "C3",
+                "highest": "A6"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 41
+        },
+        {
+            "id": "viol",
+            "name": "Viol",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D2",
+                "highest": "D6"
+            },
+            "written_range": {
+                "lowest": "D2",
+                "highest": "D6"
+            },
+            "preferred_range": {
+                "lowest": "D2",
+                "highest": "A5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "viola",
+            "name": "Viola",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C3",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "C3",
+                "highest": "A6"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 41
+        },
+        {
+            "id": "viola_pomposa",
+            "name": "Viola Pomposa",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C3",
+                "highest": "E6"
+            },
+            "written_range": {
+                "lowest": "C3",
+                "highest": "E6"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "C6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 41
+        },
+        {
+            "id": "viola_profunda",
+            "name": "Viola Profunda",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor"
+            ],
+            "sounding_range": {
+                "lowest": "C2",
+                "highest": "G5"
+            },
+            "written_range": {
+                "lowest": "C2",
+                "highest": "G5"
+            },
+            "preferred_range": {
+                "lowest": "C2",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "viola_damore",
+            "name": "Viola d'amore",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto",
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "E6"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "E6"
+            },
+            "preferred_range": {
+                "lowest": "A2",
+                "highest": "C6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 41
+        },
+        {
+            "id": "violin",
+            "name": "Violin",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "E7"
+            },
+            "written_range": {
+                "lowest": "G3",
+                "highest": "E7"
+            },
+            "preferred_range": {
+                "lowest": "D4",
+                "highest": "A6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 40
+        },
+        {
+            "id": "violino_piccolo",
+            "name": "Violino Piccolo",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "G7"
+            },
+            "written_range": {
+                "lowest": "G3",
+                "highest": "G7"
+            },
+            "preferred_range": {
+                "lowest": "D4",
+                "highest": "C7"
+            },
+            "octave_displacement": 0,
+            "midi_program": 40
+        },
+        {
+            "id": "violoncello_da_spalla",
+            "name": "Violoncello da Spalla",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor"
+            ],
+            "sounding_range": {
+                "lowest": "C2",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "C2",
+                "highest": "A5"
+            },
+            "preferred_range": {
+                "lowest": "C2",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 42
+        },
+        {
+            "id": "violotta",
+            "name": "Violotta",
+            "family": "Strings",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "alto"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "D6"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "D6"
+            },
+            "preferred_range": {
+                "lowest": "A2",
+                "highest": "A5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 41
+        },
+        {
+            "id": "alto",
+            "name": "Alto",
+            "family": "Vocal",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "G5"
+            },
+            "written_range": {
+                "lowest": "G3",
+                "highest": "G5"
+            },
+            "preferred_range": {
+                "lowest": "G3",
+                "highest": "D5"
+            },
+            "octave_displacement": 0,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "baritone",
+            "name": "Baritone",
+            "family": "Vocal",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "A4"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "A4"
+            },
+            "preferred_range": {
+                "lowest": "A2",
+                "highest": "F4"
+            },
+            "octave_displacement": 0,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "bass",
+            "name": "Bass",
+            "family": "Vocal",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "E2",
+                "highest": "E4"
+            },
+            "written_range": {
+                "lowest": "E2",
+                "highest": "E4"
+            },
+            "preferred_range": {
+                "lowest": "E2",
+                "highest": "C4"
+            },
+            "octave_displacement": 0,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "mezzo_soprano",
+            "name": "Mezzo-Soprano",
+            "family": "Vocal",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A3",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "A3",
+                "highest": "A5"
+            },
+            "preferred_range": {
+                "lowest": "A3",
+                "highest": "F5"
+            },
+            "octave_displacement": 0,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "soprano",
+            "name": "Soprano",
+            "family": "Vocal",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C4",
+                "highest": "C6"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "C6"
+            },
+            "preferred_range": {
+                "lowest": "C4",
+                "highest": "A5"
+            },
+            "octave_displacement": 0,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "tenor",
+            "name": "Tenor",
+            "family": "Vocal",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C3",
+                "highest": "C5"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "C6"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "A4"
+            },
+            "octave_displacement": -12,
+            "lyrics_support": true,
+            "midi_program": 52
+        },
+        {
+            "id": "alto_flute",
+            "name": "Alto Flute in G",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -5
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "G6"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "G3",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 73
+        },
+        {
+            "id": "saxophone_alto",
+            "name": "Alto Saxophone",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -9
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D3",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "G6"
+            },
+            "preferred_range": {
+                "lowest": "C4",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 65
+        },
+        {
+            "id": "saxophone_baritone",
+            "name": "Baritone Saxophone",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -21
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D2",
+                "highest": "A4"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "G6"
+            },
+            "preferred_range": {
+                "lowest": "C4",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 67
+        },
+        {
+            "id": "bass_clarinet",
+            "name": "Bass Clarinet in B♭",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -14
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D2",
+                "highest": "B5"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "D2",
+                "highest": "F5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 71
+        },
+        {
+            "id": "bass_flute",
+            "name": "Bass Flute",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C3",
+                "highest": "C6"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "C3",
+                "highest": "A5"
+            },
+            "octave_displacement": -12,
+            "midi_program": 73
+        },
+        {
+            "id": "bassoon",
+            "name": "Bassoon",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "bass",
+                "tenor"
+            ],
+            "sounding_range": {
+                "lowest": "B1",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "B1",
+                "highest": "E5"
+            },
+            "preferred_range": {
+                "lowest": "B1",
+                "highest": "C5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 70
+        },
+        {
+            "id": "clarinet_a",
+            "name": "Clarinet in A",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -3
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C#3",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "E3",
+                "highest": "F6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 71
+        },
+        {
+            "id": "clarinet_bb",
+            "name": "Clarinet in B♭",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D3",
+                "highest": "B6"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "E3",
+                "highest": "F6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 71
+        },
+        {
+            "id": "contrabass_clarinet",
+            "name": "Contrabass Clarinet",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -26
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D1",
+                "highest": "B4"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "D1",
+                "highest": "F4"
+            },
+            "octave_displacement": 0,
+            "midi_program": 71
+        },
+        {
+            "id": "contrabassoon",
+            "name": "Contrabassoon",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "octave",
+                "semitones": -12
+            },
+            "clefs": [
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "B0",
+                "highest": "E4"
+            },
+            "written_range": {
+                "lowest": "B1",
+                "highest": "E5"
+            },
+            "preferred_range": {
+                "lowest": "B0",
+                "highest": "C4"
+            },
+            "octave_displacement": -12,
+            "midi_program": 70
+        },
+        {
+            "id": "english_horn",
+            "name": "English Horn",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -7
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "E3",
+                "highest": "C6"
+            },
+            "written_range": {
+                "lowest": "B3",
+                "highest": "G6"
+            },
+            "preferred_range": {
+                "lowest": "E3",
+                "highest": "A5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 69
+        },
+        {
+            "id": "clarinet_eb",
+            "name": "E♭ Clarinet",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": 3
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "G3",
+                "highest": "E7"
+            },
+            "written_range": {
+                "lowest": "E3",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "G3",
+                "highest": "A6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 71
+        },
+        {
+            "id": "flute",
+            "name": "Flute",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "C4",
+                "highest": "D7"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "D7"
+            },
+            "preferred_range": {
+                "lowest": "C4",
+                "highest": "A6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 73
+        },
+        {
+            "id": "heckelphone",
+            "name": "Heckelphone",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble",
+                "bass"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "A5"
+            },
+            "written_range": {
+                "lowest": "A2",
+                "highest": "A5"
+            },
+            "preferred_range": {
+                "lowest": "A2",
+                "highest": "E5"
+            },
+            "octave_displacement": 0,
+            "midi_program": 68
+        },
+        {
+            "id": "oboe",
+            "name": "Oboe",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "none",
+                "semitones": 0
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "B3",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "B3",
+                "highest": "A6"
+            },
+            "preferred_range": {
+                "lowest": "B3",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 68
+        },
+        {
+            "id": "oboe_damore",
+            "name": "Oboe d'amore",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -3
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A3",
+                "highest": "A6"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "A3",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 68
+        },
+        {
+            "id": "piccolo",
+            "name": "Piccolo",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "octave",
+                "semitones": 12
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "D5",
+                "highest": "C8"
+            },
+            "written_range": {
+                "lowest": "D4",
+                "highest": "C7"
+            },
+            "preferred_range": {
+                "lowest": "D5",
+                "highest": "A7"
+            },
+            "octave_displacement": 12,
+            "midi_program": 72
+        },
+        {
+            "id": "saxophone_soprano",
+            "name": "Soprano Saxophone",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -2
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A3",
+                "highest": "E6"
+            },
+            "written_range": {
+                "lowest": "B3",
+                "highest": "F#6"
+            },
+            "preferred_range": {
+                "lowest": "B3",
+                "highest": "C6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 64
+        },
+        {
+            "id": "saxophone_tenor",
+            "name": "Tenor Saxophone",
+            "family": "Woodwinds",
+            "transposition": {
+                "type": "interval",
+                "semitones": -14
+            },
+            "clefs": [
+                "treble"
+            ],
+            "sounding_range": {
+                "lowest": "A2",
+                "highest": "E5"
+            },
+            "written_range": {
+                "lowest": "C4",
+                "highest": "G6"
+            },
+            "preferred_range": {
+                "lowest": "C4",
+                "highest": "E6"
+            },
+            "octave_displacement": 0,
+            "midi_program": 66
         }
     ]
 }
