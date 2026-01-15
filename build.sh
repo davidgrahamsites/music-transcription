@@ -70,7 +70,8 @@ if ! command -v conda &> /dev/null; then
     exit 1
 fi
 
-eval "$(conda shell.bash hook)"
+# Source conda properly
+source ~/miniforge3/etc/profile.d/conda.sh || source ~/anaconda3/etc/profile.d/conda.sh || source ~/miniconda3/etc/profile.d/conda.sh
 
 if ! conda env list | grep -q "^melody-transcription "; then
     echo "❌ ERROR: Conda environment 'melody-transcription' not found."
