@@ -1,24 +1,23 @@
 """
 Runtime hook for soundfile to find bundled libsndfile library.
-This fixes the issue where soundfile looks for libsndfile in system paths.
+This patches soundfile to use our bundled library instead of system paths.
 """
 import os
 import sys
 
 # When frozen by PyInstaller
 if getattr(sys, 'frozen', False):
-    # Get the bundled library path
-    bundle_dir = sys._MEIPASS
+    # Monkey-patch soundfile BEFORE it loads
+    import ctypes.util
+    original_find_library = ctypes.util.find_library
     
-    # Set environment variable to point to our bundled library
-    libsndfile_path = os.path.join(bundle_dir, 'libsndfile.dylib')
+    def patched_find_library(name):
+        if name == 'sndfile':
+            # Return path to our bundled library
+            bundle_dir = sys._MEIPASS
+            bundled_lib = os.path.join(bundle_dir, 'libsndfile.dylib')
+            if os.path.exists(bundled_lib):
+                return bundled_lib
+        return original_find_library(name)
     
-    if os.path.exists(libsndfile_path):
-        os.environ['SNDFILE_LIBRARY_PATH'] = libsndfile_path
-        
-        # Also try to preload it
-        try:
-            import ctypes
-            ctypes.CDLL(libsndfile_path)
-        except:
-            pass
+    ctypes.util.find_library = patched_find_library
