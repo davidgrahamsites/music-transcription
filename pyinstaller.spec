@@ -1,12 +1,16 @@
-#!/bin/bash
-# -*- mode: python ; coding: utf-8 -*-
+import os
+import sys
 
-block_cipher = None
+# Get conda environment path
+conda_prefix = os.environ.get('CONDA_PREFIX', os.path.expanduser('~/miniforge3/envs/melody-transcription'))
+libsndfile_path = os.path.join(conda_prefix, 'lib', 'libsndfile.dylib')
 
 a = Analysis(
     ['src/main.py'],
     pathex=[],
-    binaries=[],
+    binaries=[
+        (libsndfile_path, '.') if os.path.exists(libsndfile_path) else None,
+    ],
     datas=[
         ('src/data/instruments.json', 'data'),
     ],
