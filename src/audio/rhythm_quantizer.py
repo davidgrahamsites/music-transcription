@@ -186,6 +186,9 @@ class RhythmQuantizer:
             min_duration_beats = MIN_NOTE_DURATION / beat_duration
             quantized_duration_beats = max(quantized_duration_beats, min_duration_beats)
             
+            # Snap to valid musical duration
+            quantized_duration_beats = self._snap_to_valid_duration(quantized_duration_beats)
+            
             note.start_beat = quantized_start_beat
             note.duration_beats = quantized_duration_beats
             
@@ -194,6 +197,25 @@ class RhythmQuantizer:
             note.duration = quantized_duration_beats * beat_duration
         
         return notes
+    
+    def _snap_to_valid_duration(self, duration: float) -> float:
+        """
+        Snap duration to nearest valid musical note value.
+        
+        Valid durations in quarter notes:
+        - 4.0 (whole), 3.0 (dotted half), 2.0 (half)
+        - 1.5 (dotted quarter), 1.0 (quarter)
+        - 0.75 (dotted eighth), 0.5 (eighth)
+        - 0.375 (dotted sixteenth), 0.25 (sixteenth)
+        """
+        if duration <= 0:
+            return 0.25
+        
+        valid_durations = [4.0, 3.0, 2.0, 1.5, 1.0, 0.75, 0.5, 0.375, 0.25]
+        
+        # Find closest valid duration
+        closest = min(valid_durations, key=lambda x: abs(x - duration))
+        return closest
     
     @staticmethod
     def _quantize_value(value: float, grid: float, strength: float) -> float:
