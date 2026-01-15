@@ -1,0 +1,19 @@
+name: melody-transcription
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip=23.3
+  - numpy=1.24.3
+  - pip:
+      - librosa==0.10.1
+      - music21==9.1.0
+      - sounddevice==0.4.6
+      - PySide6==6.6.1
+      - crepe==0.0.15
+      - pyinstaller==6.3.0
+      - pytest==7.4.3
+      - scipy==1.11.4
+      - resampy==0.4.2
+      - tensorflow==2.15.0
