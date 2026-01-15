@@ -5,6 +5,8 @@ import sys
 conda_prefix = os.environ.get('CONDA_PREFIX', os.path.expanduser('~/miniforge3/envs/melody-transcription'))
 libsndfile_path = os.path.join(conda_prefix, 'lib', 'libsndfile.dylib')
 
+block_cipher = None
+
 a = Analysis(
     ['src/main.py'],
     pathex=[],
