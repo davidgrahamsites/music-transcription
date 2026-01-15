@@ -58,20 +58,21 @@ class NotationRenderer:
                         if element.isNote:
                             # Show note name with octave
                             notes_line.append(f"{element.nameWithOctave:>5}")
-                            # Show duration
-                            if element.quarterLength == 1.0:
+                            # Show duration - convert to float for formatting
+                            ql = float(element.quarterLength)
+                            if ql == 1.0:
                                 durations_line.append("  ♩  ")
-                            elif element.quarterLength == 0.5:
+                            elif ql == 0.5:
                                 durations_line.append("  ♪  ")
-                            elif element.quarterLength == 2.0:
+                            elif ql == 2.0:
                                 durations_line.append("  𝅗𝅥  ")
-                            elif element.quarterLength == 4.0:
+                            elif ql == 4.0:
                                 durations_line.append("  𝅝  ")
                             else:
-                                durations_line.append(f" {element.quarterLength:>3.1f}")
+                                durations_line.append(f" {ql:>3.1f}")
                         elif element.isRest:
                             notes_line.append(" REST")
-                            durations_line.append(f" {element.quarterLength:>3.1f}")
+                            durations_line.append(f" {float(element.quarterLength):>3.1f}")
                     
                     if notes_line:
                         output.append("  Notes:     " + " ".join(notes_line))
