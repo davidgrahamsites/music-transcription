@@ -17,6 +17,7 @@ from audio.pitch_detector import PitchDetector
 from audio.rhythm_quantizer import RhythmQuantizer
 from audio.key_detector import KeyDetector
 from notation.score_builder import ScoreBuilder
+from notation.renderer import NotationRenderer
 from export.musicxml import MusicXMLExporter
 from export.midi import MIDIExporter
 from export.pdf import PDFExporter
@@ -156,6 +157,7 @@ class MainWindow(QMainWindow):
         self.notation_text = QTextEdit()
         self.notation_text.setReadOnly(True)
         self.notation_text.setPlaceholderText("Record and transcribe to see notation preview...")
+        self.notation_text.setFont(QFont("Courier", 11))  # Monospace for better notation display
         notation_layout.addWidget(self.notation_text)
         
         notation_group.setLayout(notation_layout)
@@ -291,13 +293,20 @@ class MainWindow(QMainWindow):
             )
             
             # Display results
-            self.notation_text.append(f"\n✓ Transcription complete!\n")
-            self.notation_text.append(f"- Detected notes: {len(quantized_notes)}\n")
-            self.notation_text.append(f"- Key: {self.detected_key}\n")
-            self.notation_text.append(f"- Instrument: {self.current_instrument.name}\n")
+            self.notation_text.clear()
+            self.notation_text.append(f"✓ Transcription complete!\n")
+            self.notation_text.append(f"- Detected notes: {len(quantized_notes)}")
+            self.notation_text.append(f"- Key: {self.detected_key}")
+            self.notation_text.append(f"- Instrument: {self.current_instrument.name}")
             
             if self.current_instrument.transposition_semitones != 0:
-                self.notation_text.append(f"- Transposition: {self.current_instrument.transposition_semitones} semitones\n")
+                self.notation_text.append(f"- Transposition: {self.current_instrument.transposition_semitones} semitones")
+            
+            self.notation_text.append("\n" + "=" * 60 + "\n")
+            
+            # Render notation visually
+            notation_display = NotationRenderer.render_to_text(self.current_score)
+            self.notation_text.append(notation_display)
             
             # Enable export buttons
             self.export_mxml_concert_btn.setEnabled(True)
