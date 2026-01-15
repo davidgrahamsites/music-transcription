@@ -19,6 +19,7 @@ from audio.key_detector import KeyDetector
 from notation.score_builder import ScoreBuilder
 from export.musicxml import MusicXMLExporter
 from export.midi import MIDIExporter
+from export.pdf import PDFExporter
 from utils.config import INSTRUMENTS_DB_PATH, LEVEL_UPDATE_INTERVAL
 from utils.git_version import GIT_COMMIT
 
@@ -179,6 +180,11 @@ class MainWindow(QMainWindow):
         self.export_midi_btn.clicked.connect(self.on_export_midi)
         export_layout.addWidget(self.export_midi_btn)
         
+        self.export_pdf_btn = QPushButton("PDF")
+        self.export_pdf_btn.setEnabled(False)
+        self.export_pdf_btn.clicked.connect(self.on_export_pdf)
+        export_layout.addWidget(self.export_pdf_btn)
+        
         export_group.setLayout(export_layout)
         main_layout.addWidget(export_group)
     
@@ -297,6 +303,7 @@ class MainWindow(QMainWindow):
             self.export_mxml_concert_btn.setEnabled(True)
             self.export_mxml_written_btn.setEnabled(True)
             self.export_midi_btn.setEnabled(True)
+            self.export_pdf_btn.setEnabled(True)
             
         except Exception as e:
             QMessageBox.critical(self, "Transcription Error", f"Error during transcription:\n{str(e)}")
@@ -327,11 +334,14 @@ class MainWindow(QMainWindow):
                 use_written_pitch=written_pitch
             )
             
-            success = MusicXMLExporter.export(score, filename)
-            if success:
-                QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
-            else:
-                QMessageBox.critical(self, "Export Error", f"Failed to export MusicXML.")
+            try:
+                success = MusicXMLExporter.export(score, filename)
+                if success:
+                    QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
+                else:
+                    QMessageBox.critical(self, "Export Error", f"Failed to export MusicXML.")
+            except Exception as e:
+                QMessageBox.critical(self, "Export Error", f"Failed to export MusicXML:\n{str(e)}")
     
     def on_export_midi(self):
         """Export to MIDI."""
@@ -346,11 +356,14 @@ class MainWindow(QMainWindow):
         )
         
         if filename:
-            success = MIDIExporter.export(self.current_score, filename)
-            if success:
-                QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
-            else:
-                QMessageBox.critical(self, "Export Error", f"Failed to export MIDI.")
+            try:
+                success = MIDIExporter.export(self.current_score, filename)
+                if success:
+                    QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
+                else:
+                    QMessageBox.critical(self, "Export Error", f"Failed to export MIDI.")
+            except Exception as e:
+                QMessageBox.critical(self, "Export Error", f"Failed to export MIDI:\n{str(e)}")
     
     def update_levels(self):
         """Update level meter."""
@@ -370,6 +383,28 @@ class MainWindow(QMainWindow):
         else:
             self.level_status.setText("Recording...")
             self.level_status.setStyleSheet("color: green; font-weight: bold;")
+    
+    def on_export_pdf(self):
+        """Export to PDF."""
+        if not self.current_score:
+            return
+        
+        filename, _ = QFileDialog.getSaveFileName(
+            self,
+            "Export PDF",
+            "melody.pdf",
+            "PDF Files (*.pdf)"
+        )
+        
+        if filename:
+            try:
+                success = PDFExporter().export(self.current_score, filename)
+                if success:
+                    QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
+                else:
+                    QMessageBox.critical(self, "Export Error", f"Failed to export PDF.")
+            except Exception as e:
+                QMessageBox.critical(self, "Export Error", f"Failed to export PDF:\n{str(e)}")
     
     @staticmethod
     def _parse_time_signature(ts_str: str) -> tuple:
