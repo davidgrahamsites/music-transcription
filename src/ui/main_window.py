@@ -32,7 +32,7 @@ class MainWindow(QMainWindow):
         # Initialize components
         self.instrument_db = InstrumentDatabase(INSTRUMENTS_DB_PATH)
         self.recorder = AudioRecorder()
-        self.pitch_detector = PitchDetector(model_capacity='tiny')
+        self.pitch_detector = PitchDetector()  # Uses librosa pYIN
         self.rhythm_quantizer = RhythmQuantizer()
         self.key_detector = KeyDetector()
         self.score_builder = ScoreBuilder(self.instrument_db)
