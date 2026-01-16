@@ -73,19 +73,32 @@ class MainWindow(QMainWindow):
         
         # === Instrument Selection ===
         inst_group = QGroupBox("Instrument Settings")
-        inst_layout = QHBoxLayout()
+        inst_layout = QVBoxLayout()
         
-        inst_layout.addWidget(QLabel("Family:"))
+        # Search box
+        search_layout = QHBoxLayout()
+        search_layout.addWidget(QLabel("Search:"))
+        self.search_input = QLineEdit()
+        self.search_input.setPlaceholderText("Type to search instruments...")
+        self.search_input.textChanged.connect(self.on_search_changed)
+        search_layout.addWidget(self.search_input)
+        inst_layout.addLayout(search_layout)
+        
+        # Family and instrument selectors
+        selector_layout = QHBoxLayout()
+        selector_layout.addWidget(QLabel("Family:"))
         self.family_combo = QComboBox()
         families = self.instrument_db.get_all_families()
         self.family_combo.addItems(families)
         self.family_combo.currentIndexChanged.connect(self.on_family_changed)
-        inst_layout.addWidget(self.family_combo)
+        selector_layout.addWidget(self.family_combo)
         
-        inst_layout.addWidget(QLabel("Instrument:"))
+        selector_layout.addWidget(QLabel("Instrument:"))
         self.instrument_combo = QComboBox()
         self.instrument_combo.currentIndexChanged.connect(self.on_instrument_changed)
-        inst_layout.addWidget(self.instrument_combo)
+        selector_layout.addWidget(self.instrument_combo)
+        
+        inst_layout.addLayout(selector_layout)
         
         inst_group.setLayout(inst_layout)
         main_layout.addWidget(inst_group)
@@ -217,9 +230,39 @@ class MainWindow(QMainWindow):
         export_group.setLayout(export_layout)
         main_layout.addWidget(export_group)
     
-    def on_family_changed(self, index):
+    def on_search_changed(self, text):
+        """Filter instruments based on search text."""
+        search_text = text.lower().strip()
+        
+        if not search_text:
+            # If search is empty, show current family's instruments
+            self.on_family_changed(self.family_combo.currentIndex())
+            return
+        
+        # Search all instruments across all families
+        all_instruments = []
+        for family in self.instrument_db.get_all_families():
+            instruments = self.instrument_db.list_by_family(family)
+            all_instruments.extend(instruments)
+        
+        # Filter by search text
+        filtered = [inst for inst in all_instruments if search_text in inst.name.lower()]
+        
+        # Update combo box
+        self.instrument_combo.clear()
+        for inst in sorted(filtered, key=lambda x: x.name):
+            self.instrument_combo.addItem(inst.name, inst.id)
+        
+        # Auto-select first result if only one match
+        if len(filtered) == 1:
+            self.instrument_combo.setCurrentIndex(0)
+    
+    def on_family_changed(self, index=None):
         """Handle family selection change."""
-        if index < 0:
+        # Clear search when family changes
+        self.search_input.clear()
+        
+        if self.family_combo.currentIndex() < 0:
             return
         
         family = self.family_combo.currentText()
