@@ -5,7 +5,7 @@ from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QComboBox, QLabel, QSpinBox,
     QProgressBar, QTextEdit, QGroupBox, QFileDialog,
-    QMessageBox, QApplication
+    QMessageBox, QApplication, QLineEdit
 )
 from PySide6.QtCore import QTimer, Qt
 from PySide6.QtGui import QFont
@@ -88,24 +88,42 @@ class MainWindow(QMainWindow):
         
         # === Musical Settings ===
         music_group = QGroupBox("Musical Settings")
-        music_layout = QHBoxLayout()
+        music_layout = QVBoxLayout()
         
-        music_layout.addWidget(QLabel("Tempo (BPM):"))
+        # First row: tempo, time sig, key
+        settings_row = QHBoxLayout()
+        settings_row.addWidget(QLabel("Tempo (BPM):"))
         self.tempo_spin = QSpinBox()
         self.tempo_spin.setRange(40, 240)
         self.tempo_spin.setValue(120)
         self.tempo_spin.valueChanged.connect(self.on_tempo_changed)
-        music_layout.addWidget(self.tempo_spin)
+        settings_row.addWidget(self.tempo_spin)
         
-        music_layout.addWidget(QLabel("Time Signature:"))
+        settings_row.addWidget(QLabel("Time Signature:"))
         self.time_sig_combo = QComboBox()
         self.time_sig_combo.addItems(["4/4", "3/4", "2/4", "6/8", "5/4", "7/8"])
-        music_layout.addWidget(self.time_sig_combo)
+        settings_row.addWidget(self.time_sig_combo)
         
-        music_layout.addWidget(QLabel("Key:"))
+        settings_row.addWidget(QLabel("Key:"))
         self.key_label = QLabel("C major (auto)")
         self.key_label.setStyleSheet("font-weight: bold;")
-        music_layout.addWidget(self.key_label)
+        settings_row.addWidget(self.key_label)
+        
+        music_layout.addLayout(settings_row)
+        
+        # Second row: title and composer
+        title_row = QHBoxLayout()
+        title_row.addWidget(QLabel("Title:"))
+        self.title_input = QLineEdit()
+        self.title_input.setPlaceholderText("My Melody")
+        title_row.addWidget(self.title_input)
+        
+        title_row.addWidget(QLabel("Composer:"))
+        self.composer_input = QLineEdit()
+        self.composer_input.setPlaceholderText("Your Name")
+        title_row.addWidget(self.composer_input)
+        
+        music_layout.addLayout(title_row)
         
         music_group.setLayout(music_layout)
         main_layout.addWidget(music_group)
@@ -130,6 +148,11 @@ class MainWindow(QMainWindow):
         self.transcribe_btn.setEnabled(False)
         self.transcribe_btn.clicked.connect(self.on_transcribe_clicked)
         button_layout.addWidget(self.transcribe_btn)
+        
+        self.playback_btn = QPushButton("▶ Play")
+        self.playback_btn.setEnabled(False)
+        self.playback_btn.clicked.connect(self.on_playback_clicked)
+        button_layout.addWidget(self.playback_btn)
         
         rec_layout.addLayout(button_layout)
         
@@ -308,11 +331,12 @@ class MainWindow(QMainWindow):
             notation_display = NotationRenderer.render_to_text(self.current_score)
             self.notation_text.append(notation_display)
             
-            # Enable export buttons
+            # Enable export and playback buttons
             self.export_mxml_concert_btn.setEnabled(True)
             self.export_mxml_written_btn.setEnabled(True)
             self.export_midi_btn.setEnabled(True)
             self.export_pdf_btn.setEnabled(True)
+            self.playback_btn.setEnabled(True)
             
         except Exception as e:
             QMessageBox.critical(self, "Transcription Error", f"Error during transcription:\n{str(e)}")
@@ -344,7 +368,11 @@ class MainWindow(QMainWindow):
             )
             
             try:
-                success = MusicXMLExporter.export(score, filename)
+                # Add title and composer
+                title = self.title_input.text() or "My Melody"
+                composer = self.composer_input.text() or "Unknown"
+                
+                success = MusicXMLExporter.export(score, filename, title=title, composer=composer)
                 if success:
                     QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
                 else:
@@ -407,6 +435,16 @@ class MainWindow(QMainWindow):
         
         if filename:
             try:
+                # Add title and composer to score
+                title = self.title_input.text() or "My Melody"
+                composer = self.composer_input.text() or "Unknown"
+                
+                if not self.current_score.metadata:
+                    from music21 import metadata
+                    self.current_score.metadata = metadata.Metadata()
+                self.current_score.metadata.title = title
+                self.current_score.metadata.composer = composer
+                
                 success = PDFExporter().export(self.current_score, filename)
                 if success:
                     QMessageBox.information(self, "Export Success", f"Exported to:\n{filename}")
@@ -414,6 +452,31 @@ class MainWindow(QMainWindow):
                     QMessageBox.critical(self, "Export Error", f"Failed to export PDF.")
             except Exception as e:
                 QMessageBox.critical(self, "Export Error", f"Failed to export PDF:\n{str(e)}")
+    
+    def on_playback_clicked(self):
+        """Play back the transcribed score using MIDI."""
+        if not self.current_score:
+            return
+        
+        try:
+            # Use music21's MIDI playback
+            from music21 import midi
+            
+            # Create MIDI file in memory and play it
+            self.playback_btn.setText("⏸ Playing...")
+            self.playback_btn.setEnabled(False)
+            QApplication.processEvents()
+            
+            # Play using music21's show('midi')
+            self.current_score.show('midi')
+            
+            self.playback_btn.setText("▶ Play")
+            self.playback_btn.setEnabled(True)
+            
+        except Exception as e:
+            self.playback_btn.setText("▶ Play")
+            self.playback_btn.setEnabled(True)
+            QMessageBox.critical(self, "Playback Error", f"Failed to play back:\n{str(e)}")
     
     @staticmethod
     def _parse_time_signature(ts_str: str) -> tuple:
