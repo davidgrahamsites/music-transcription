@@ -21,6 +21,7 @@ from notation.renderer import NotationRenderer
 from export.musicxml import MusicXMLExporter
 from export.midi import MIDIExporter
 from export.pdf import PDFExporter
+from audio.midi_player import MIDIPlayer
 from utils.config import INSTRUMENTS_DB_PATH, LEVEL_UPDATE_INTERVAL
 from utils.git_version import GIT_COMMIT
 
@@ -45,6 +46,9 @@ class MainWindow(QMainWindow):
         self.current_notes = None
         self.detected_key = "C major"
         self.key_confidence = 0.0
+        
+        # MIDI Player
+        self.midi_player = MIDIPlayer()
         
         # Setup UI
         self.init_ui()
@@ -454,28 +458,35 @@ class MainWindow(QMainWindow):
                 QMessageBox.critical(self, "Export Error", f"Failed to export PDF:\n{str(e)}")
     
     def on_playback_clicked(self):
-        """Play back the transcribed score using MIDI."""
+        """Play back the transcribed score using built-in MIDI player."""
         if not self.current_score:
             return
         
+        # If already playing, stop
+        if self.midi_player.is_playing():
+            self.midi_player.stop()
+            self.playback_btn.setText("▶ Play")
+            return
+        
         try:
-            # Use music21's MIDI playback
-            from music21 import midi
-            
-            # Create MIDI file in memory and play it
+            # Start playback
             self.playback_btn.setText("⏸ Playing...")
-            self.playback_btn.setEnabled(False)
             QApplication.processEvents()
             
-            # Play using music21's show('midi')
-            self.current_score.show('midi')
+            success = self.midi_player.play_score(self.current_score)
             
-            self.playback_btn.setText("▶ Play")
-            self.playback_btn.setEnabled(True)
+            if success:
+                self.playback_btn.setText("■ Stop")
+            else:
+                self.playback_btn.setText("▶ Play")
+                QMessageBox.critical(
+                    self,
+                    "Playback Error",
+                    "Failed to play MIDI. Make sure pygame is installed."
+                )
             
         except Exception as e:
             self.playback_btn.setText("▶ Play")
-            self.playback_btn.setEnabled(True)
             QMessageBox.critical(self, "Playback Error", f"Failed to play back:\n{str(e)}")
     
     @staticmethod
