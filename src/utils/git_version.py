@@ -1,1 +1,1 @@
-GIT_COMMIT = 'b470b97'
+GIT_COMMIT = "b8dd6d6"

@@ -194,8 +194,7 @@
                 "semitones": -2
             },
             "clefs": [
-                "treble",
-                "bass"
+                "treble"
             ],
             "sounding_range": {
                 "lowest": "B1",
